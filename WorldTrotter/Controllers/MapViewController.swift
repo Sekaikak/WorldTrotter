@@ -15,37 +15,12 @@ class MapViewController: UIViewController {
     override func loadView() {
         mapView = MKMapView()
         view = mapView
-        
         generateControl()
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    @objc func pointInt(_ switchUI: UISwitch) {
-        switch switchUI.isOn {
-        case true:
-            mapView.pointOfInterestFilter = .excludingAll
-        default:
-            mapView.pointOfInterestFilter = .includingAll
-        }
-    }
-    
-    @objc func mapTypeChanged(_ segControl: UISegmentedControl) {
-        switch segControl.selectedSegmentIndex {
-        case 0:
-            mapView.mapType = .standard
-        case 1:
-            mapView.mapType = .hybrid
-        case 2:
-            mapView.mapType = .satellite
-        default:
-            break
-        }
     }
 }
 
+
+//MARK: - Control Section
 extension MapViewController {
     func generateControl() {
         let segmentedControl = UISegmentedControl(items: ["Standard", "Hybrid", "Satellite"])
@@ -76,5 +51,26 @@ extension MapViewController {
         pointOfInterestSwitch.topAnchor.constraint(equalTo: segmentedControl.bottomAnchor, constant: 8).isActive = true
         pointOfInterestLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
         pointOfInterestSwitch.leadingAnchor.constraint(equalTo: pointOfInterestLabel.trailingAnchor, constant: 8).isActive = true
+    }
+    @objc func pointInt(_ switchUI: UISwitch) {
+        switch switchUI.isOn {
+        case true:
+            mapView.pointOfInterestFilter = .excludingAll
+        default:
+            mapView.pointOfInterestFilter = .includingAll
+        }
+    }
+    
+    @objc func mapTypeChanged(_ segControl: UISegmentedControl) {
+        switch segControl.selectedSegmentIndex {
+        case 0:
+            mapView.mapType = .standard
+        case 1:
+            mapView.mapType = .hybrid
+        case 2:
+            mapView.mapType = .satellite
+        default:
+            break
+        }
     }
 }
