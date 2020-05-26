@@ -64,30 +64,10 @@
             </objects>
             <point key="canvasLocation" x="2206" y="-335"/>
         </scene>
-        <!--Quiz-->
-        <scene sceneID="cXx-Pl-geb">
-            <objects>
-                <viewController title="Quiz" id="0VO-xb-1oj" customClass="QuizViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="p0p-Z1-nt8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="NwC-yh-HVD"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Quiz" image="questionmark.circle" catalog="system" id="bgE-zC-EXy"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZfI-n9-i5g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3296" y="109"/>
-        </scene>
         <!--Map-->
         <scene sceneID="RtU-BT-MBv">
             <objects>
                 <viewController title="Map" id="Xy2-5W-ZgM" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="E5C-Sj-HYp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="n2Q-jO-z0o"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KwS-zB-l4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -107,7 +87,6 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="3L7-YM-ElH"/>
                         <segue destination="Xy2-5W-ZgM" kind="relationship" relationship="viewControllers" id="h95-dH-8nz"/>
-                        <segue destination="0VO-xb-1oj" kind="relationship" relationship="viewControllers" id="bHv-0M-xhE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0br-RG-WwJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -118,6 +97,5 @@
     <resources>
         <image name="ConvertIcon" width="48.333332061767578" height="32.333332061767578"/>
         <image name="MapIcon" width="48.333332061767578" height="32.333332061767578"/>
-        <image name="questionmark.circle" catalog="system" width="128" height="121"/>
     </resources>
 </document>

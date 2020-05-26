@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2A38784D247B756D00080E26 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A38784C247B756D00080E26 /* MapViewController.swift */; };
-		2A387852247C4B4300080E26 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A387851247C4B4300080E26 /* QuizViewController.swift */; };
 		2A5ABF392479EDD8005E90FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ABF382479EDD8005E90FB /* AppDelegate.swift */; };
 		2A5ABF3B2479EDD8005E90FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ABF3A2479EDD8005E90FB /* SceneDelegate.swift */; };
 		2A5ABF3D2479EDD8005E90FB /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ABF3C2479EDD8005E90FB /* ConversionViewController.swift */; };
@@ -38,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		2A38784C247B756D00080E26 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		2A387851247C4B4300080E26 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		2A5ABF352479EDD8005E90FB /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5ABF382479EDD8005E90FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A5ABF3A2479EDD8005E90FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 			children = (
 				2A5ABF3C2479EDD8005E90FB /* ConversionViewController.swift */,
 				2A38784C247B756D00080E26 /* MapViewController.swift */,
-				2A387851247C4B4300080E26 /* QuizViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -290,7 +287,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A5ABF3D2479EDD8005E90FB /* ConversionViewController.swift in Sources */,
-				2A387852247C4B4300080E26 /* QuizViewController.swift in Sources */,
 				2A5ABF392479EDD8005E90FB /* AppDelegate.swift in Sources */,
 				2A5ABF3B2479EDD8005E90FB /* SceneDelegate.swift in Sources */,
 				2A38784D247B756D00080E26 /* MapViewController.swift in Sources */,
