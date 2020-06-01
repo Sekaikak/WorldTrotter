@@ -25,6 +25,7 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
             return nil
         }
     }
+    
     let numberFormatter: NumberFormatter = {
         let nf = NumberFormatter()
         nf.numberStyle = .decimal
@@ -57,17 +58,26 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         textField.resignFirstResponder()
     }
+    
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         let existingTextHasDecimalSeperator = textField.text?.range(of: ".")
         let replacementTextHasDecimalSeperator = string.range(of: ".")
+        if textField.text != nil {
+            let allowedCharacters = CharacterSet(charactersIn:".0123456789")
+            let characterSet = CharacterSet(charactersIn: string)
+            return allowedCharacters.isSuperset(of: characterSet)
+        }
         
         if existingTextHasDecimalSeperator != nil, replacementTextHasDecimalSeperator != nil {
             return false
         } else {
             return true
         }
+        
     }
+    
     
 }
 
